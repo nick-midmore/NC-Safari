@@ -9,11 +9,27 @@
             Goose jeff = new Goose(3);
             Bat betty = new Bat(0.7f);
 
-            Sky sky = new Sky();
-            sky.AddAnimalInEnvironment(betty);
-            sky.AddAnimalInEnvironment(jeff);
+            //HuntingGround huntingGround = new HuntingGround();
 
-            sky.CheckAnimalsInEnvironment();
+            //huntingGround.AddAnimalInEnvironment(fluffy);
+            //huntingGround.AddAnimalInEnvironment(penny);
+            //huntingGround.AddAnimalInEnvironment(betty);
+
+            //huntingGround.CheckAnimalsInEnvironment();
+
+            WeightComparer weightComparer = new WeightComparer(false);
+            List<Animal> animalsToSee = new List<Animal>
+            {
+              new Tiger(70),
+              new Goose(5.2f),
+              new Bat(0.9f),
+              new Goose(4),
+              new Tiger(90),
+              new Penguin(15.8f)
+            };
+            animalsToSee.Sort(weightComparer);
+
+            animalsToSee.ForEach(animal => Console.WriteLine($" {animal.GetType().Name} - {animal.Weight}kg"));
         }
     }
 }

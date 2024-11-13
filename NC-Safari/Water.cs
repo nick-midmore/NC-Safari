@@ -10,7 +10,10 @@ namespace NC_Safari
     {
         public override void CheckAnimalsInEnvironment()
         {
-            throw new NotImplementedException();
+            foreach (ISwim animal in animalsInEnvironment)
+            {
+                animal.Swim();
+            }
         }
     }
 }
