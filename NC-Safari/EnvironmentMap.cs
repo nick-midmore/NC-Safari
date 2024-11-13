@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace NC_Safari
 {
-    public interface IHunt : ITravel
+    internal class EnvironmentMap
     {
-        void Hunt();
     }
 }

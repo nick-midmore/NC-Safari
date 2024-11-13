@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NC_Safari
+namespace NC_Safari.Interfaces
 {
-    public interface ISwim : ITravel
+    public interface IHunt : ITravel
     {
-        void Swim();
-        
-
+        void Hunt();
     }
 }

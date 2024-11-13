@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NC_Safari.Interfaces;
 
 namespace NC_Safari
 {
@@ -11,7 +12,11 @@ namespace NC_Safari
         public Bat(float Weight) : base(Weight)
         {
         }
-        
+
+        public int Speed { get; set; }
+        public int[] Position { get; set; }
+        public int Direction { get; set; }
+
         public void Fly()
         {
             Console.WriteLine("Bat is flying...");

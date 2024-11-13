@@ -4,12 +4,12 @@ using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NC_Safari
+namespace NC_Safari.Interfaces
 {
     public interface ITravel
     {
         public int Speed { get; set; }
-        public int[] Position { get; set; } 
+        public int[] Position { get; set; }
         public int Direction { get; set; }
         int GetSpeed(ITravel animal)
         {
