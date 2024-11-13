@@ -7,7 +7,7 @@ using NC_Safari.Interfaces;
 
 namespace NC_Safari
 {
-    public class Water : SafariEnvironment<ISwim>
+    public class Water : SafariEnvironment
     {
         protected override int MaximumEnvironmentSpeed { get; } = 1;
         public override void CheckAnimalsInEnvironment()

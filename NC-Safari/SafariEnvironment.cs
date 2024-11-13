@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace NC_Safari
 {
-    public abstract class SafariEnvironment<IEnvironment>
+    public abstract class SafariEnvironment
     {
         protected abstract int MaximumEnvironmentSpeed { get; }
-        protected List<Animal> animalsInEnvironment = new List<Animal>();
+        internal List<Animal> animalsInEnvironment = new List<Animal>();
         public abstract void CheckAnimalsInEnvironment();
 
         public void AddAnimalInEnvironment(Animal animal)

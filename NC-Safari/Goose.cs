@@ -9,8 +9,14 @@ namespace NC_Safari
 {
     public class Goose : Bird, IFly, ISwim
     {
-        public Goose(float Weight) : base(Weight)
+        public int Speed { get; set; }
+        public int[] Position { get; set; }
+        public int Direction { get; set; }
+        public Goose(float Weight, int speed, int[] position, int direction) : base(Weight)
         {
+            Speed = speed;
+            Direction = direction;
+            Position = position;
         }
 
         public void Fly()

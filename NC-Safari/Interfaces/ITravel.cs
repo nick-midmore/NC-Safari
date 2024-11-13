@@ -25,5 +25,22 @@ namespace NC_Safari.Interfaces
         {
             return animal.Direction;
         }
+        void Move()
+        {
+            switch (Direction)
+            {
+                case 1:
+                    Position[1] += Speed;
+                    break;
+                case 2: 
+                    Position[0] += Speed;
+                    break;
+                case 3: 
+                    Position[1] -= Speed;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

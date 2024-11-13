@@ -9,8 +9,15 @@ namespace NC_Safari
 {
     internal class Penguin : Bird, IHunt, ISwim
     {
-        public Penguin(float Weight) : base(Weight)
+        public int Speed { get; set; }
+        public int[] Position { get; set; }
+        public int Direction { get; set; }
+
+        public Penguin(float Weight, int speed, int[] position, int direction) : base(Weight)
         {
+            Speed = speed;
+            Position = position;
+            Direction = direction;
         }
 
         public void Move()

@@ -6,12 +6,12 @@ namespace NC_Safari
     {
         public static void Main()
         {
-            Tiger fluffy = new Tiger(80);
-            Penguin penny = new Penguin(20.4f);
-            Goose jeff = new Goose(3);
-            Bat betty = new Bat(0.7f);
+            //Tiger fluffy = new Tiger(80);
+            //Penguin penny = new Penguin(20.4f);
+            //Goose jeff = new Goose(3);
+            //Bat betty = new Bat(0.7f);
 
-            // HuntingGround huntingGround = new HuntingGround();
+            //HuntingGround huntingGround = new HuntingGround();
 
             //huntingGround.AddAnimalInEnvironment(fluffy);
             //huntingGround.AddAnimalInEnvironment(penny);
@@ -33,13 +33,13 @@ namespace NC_Safari
 
             //animalsToSee.ForEach(animal => Console.WriteLine($" {animal.GetType().Name} - {animal.Weight}kg"));
 
-            WeightFormatter tigerWeigher = new WeightFormatter(new Tiger(100.4f));
+            //WeightFormatter tigerWeigher = new WeightFormatter(new Tiger(100.4f));
 
-            Console.WriteLine(tigerWeigher.ToString("kilograms", CultureInfo.CurrentCulture));
-            Console.WriteLine(tigerWeigher.ToString("kilograms", new CultureInfo("de-DE")));
+            //Console.WriteLine(tigerWeigher.ToString("kilograms", CultureInfo.CurrentCulture));
+            //Console.WriteLine(tigerWeigher.ToString("kilograms", new CultureInfo("de-DE")));
 
-            Console.WriteLine(tigerWeigher.ToString("ounces", CultureInfo.CurrentCulture));
-            Console.WriteLine(tigerWeigher.ToString("ounces", new CultureInfo("de-DE")));
+            //Console.WriteLine(tigerWeigher.ToString("ounces", CultureInfo.CurrentCulture));
+            //Console.WriteLine(tigerWeigher.ToString("ounces", new CultureInfo("de-DE")));
         }
     }
 }

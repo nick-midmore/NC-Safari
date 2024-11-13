@@ -9,8 +9,11 @@ namespace NC_Safari
 {
     public class Bat : Mammal, IHunt, IFly
     {
-        public Bat(float Weight) : base(Weight)
+        public Bat(float Weight, int speed, int[] position, int direction) : base(Weight)
         {
+            Speed = speed;
+            Position = position;
+            Direction = direction;
         }
 
         public int Speed { get; set; }

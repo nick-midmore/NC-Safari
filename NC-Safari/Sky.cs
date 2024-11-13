@@ -7,7 +7,7 @@ using NC_Safari.Interfaces;
 
 namespace NC_Safari
 {
-    public class Sky : SafariEnvironment<IFly>
+    public class Sky : SafariEnvironment
     {
         protected override int MaximumEnvironmentSpeed { get; } = 3;
         public override void CheckAnimalsInEnvironment()

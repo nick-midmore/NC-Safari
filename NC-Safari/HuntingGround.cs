@@ -7,7 +7,7 @@ using NC_Safari.Interfaces;
 
 namespace NC_Safari
 {
-    public class HuntingGround : SafariEnvironment<IHunt>
+    public class HuntingGround : SafariEnvironment
     {
         protected override int MaximumEnvironmentSpeed { get; } = 2; 
 
