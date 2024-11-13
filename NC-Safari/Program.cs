@@ -1,4 +1,6 @@
-﻿namespace NC_Safari
+﻿using System.Globalization;
+
+namespace NC_Safari
 {
     internal class Program
     {
@@ -17,19 +19,27 @@
 
             //huntingGround.CheckAnimalsInEnvironment();
 
-            WeightComparer weightComparer = new WeightComparer(false);
-            List<Animal> animalsToSee = new List<Animal>
-            {
-              new Tiger(70),
-              new Goose(5.2f),
-              new Bat(0.9f),
-              new Goose(4),
-              new Tiger(90),
-              new Penguin(15.8f)
-            };
-            animalsToSee.Sort(weightComparer);
+            //WeightComparer weightComparer = new WeightComparer(false);
+            //List<Animal> animalsToSee = new List<Animal>
+            //{
+            //  new Tiger(70),
+            //  new Goose(5.2f),
+            //  new Bat(0.9f),
+            //  new Goose(4),
+            //  new Tiger(90),
+            //  new Penguin(15.8f)
+            //};
+            //animalsToSee.Sort(weightComparer);
 
-            animalsToSee.ForEach(animal => Console.WriteLine($" {animal.GetType().Name} - {animal.Weight}kg"));
+            //animalsToSee.ForEach(animal => Console.WriteLine($" {animal.GetType().Name} - {animal.Weight}kg"));
+
+            WeightFormatter tigerWeigher = new WeightFormatter(new Tiger(100.4f));
+
+            Console.WriteLine(tigerWeigher.ToString("kilograms", CultureInfo.CurrentCulture));
+            Console.WriteLine(tigerWeigher.ToString("kilograms", new CultureInfo("de-DE")));
+
+            Console.WriteLine(tigerWeigher.ToString("ounces", CultureInfo.CurrentCulture));
+            Console.WriteLine(tigerWeigher.ToString("ounces", new CultureInfo("de-DE")));
         }
     }
 }
