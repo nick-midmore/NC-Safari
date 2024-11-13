@@ -2,16 +2,18 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Tiger fluffy = new Tiger(70.5f);
-            Penguin penny = new Penguin(21);
+            Tiger fluffy = new Tiger(80);
+            Penguin penny = new Penguin(20.4f);
+            Goose jeff = new Goose(3);
+            Bat betty = new Bat(0.7f);
 
-            fluffy.Move();
-            penny.Move();
+            Sky sky = new Sky();
+            sky.AddAnimalInEnvironment(betty);
+            sky.AddAnimalInEnvironment(jeff);
 
-            fluffy.MakeSound();
-            penny.MakeSound();
+            sky.CheckAnimalsInEnvironment();
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NC-Safari")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66557d124fd0d394e1ac96d9a2127d614722b844")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db4dc8ada69b6c5abec2cce63fbdeb91c7273257")]
 [assembly: System.Reflection.AssemblyProductAttribute("NC-Safari")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NC-Safari")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
