@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NC_Safari
 {
-    internal class Mammal : Animal
+    public class Mammal : Animal
     {
         public Mammal(float Weight) : base(Weight)
         {

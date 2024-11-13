@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace NC_Safari
 {
-    [Obsolete("Use IFly, IHunt or ISwim instead :)", true)]
-    internal interface IMove
+    public interface IHunt
     {
-        void Move();
+        void Hunt();
     }
 }
