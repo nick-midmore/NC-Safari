@@ -8,6 +8,8 @@ namespace NC_Safari
 {
     public class HuntingGround : SafariEnvironment<IHunt>
     {
+        protected override int MaximumEnvironmentSpeed { get; } = 2; 
+
         public override void CheckAnimalsInEnvironment()
         {
             foreach (IHunt animal in animalsInEnvironment)

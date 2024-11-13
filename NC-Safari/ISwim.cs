@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace NC_Safari
 {
-    public interface ISwim
+    public interface ISwim : ITravel
     {
         void Swim();
+        
+
     }
 }

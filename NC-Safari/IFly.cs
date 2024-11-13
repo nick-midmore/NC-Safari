@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace NC_Safari
 {
-    public interface IFly
+    public interface IFly : ITravel
     {
+        public int Speed { get; set; }
+
         void Fly();
+        
     }
 }

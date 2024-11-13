@@ -8,6 +8,7 @@ namespace NC_Safari
 {
     public abstract class SafariEnvironment<IEnvironment>
     {
+        protected abstract int MaximumEnvironmentSpeed { get; }
         protected List<Animal> animalsInEnvironment = new List<Animal>();
         public abstract void CheckAnimalsInEnvironment();
 

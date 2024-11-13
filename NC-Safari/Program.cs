@@ -11,7 +11,7 @@ namespace NC_Safari
             Goose jeff = new Goose(3);
             Bat betty = new Bat(0.7f);
 
-            //HuntingGround huntingGround = new HuntingGround();
+            // HuntingGround huntingGround = new HuntingGround();
 
             //huntingGround.AddAnimalInEnvironment(fluffy);
             //huntingGround.AddAnimalInEnvironment(penny);
